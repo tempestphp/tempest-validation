@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\In;
 
 /**
  * @internal
+ * @small
  */
 final class InTest extends TestCase
 {

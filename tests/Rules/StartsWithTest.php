@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\StartsWith;
 
 /**
  * @internal
+ * @small
  */
 final class StartsWithTest extends TestCase
 {

@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\MultipleOf;
 
 /**
  * @internal
+ * @small
  */
 final class MultipleOfTest extends TestCase
 {

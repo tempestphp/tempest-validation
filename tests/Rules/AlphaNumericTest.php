@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\AlphaNumeric;
 
 /**
  * @internal
+ * @small
  */
 final class AlphaNumericTest extends TestCase
 {

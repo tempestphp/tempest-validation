@@ -5,22 +5,26 @@ declare(strict_types=1);
 namespace Tempest\Validation\Tests\Rules;
 
 use InvalidArgumentException;
-use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Tempest\Validation\Rules\Count;
 
 /**
  * @internal
+ * @small
  */
 final class CountTest extends TestCase
 {
-    #[DataProvider('provide_count_cases')]
+    /**
+     * @dataProvider provide_count_cases
+     */
     public function test_count(Count $rule, array $stringToTest, bool $expected): void
     {
         $this->assertEquals($expected, $rule->isValid($stringToTest));
     }
 
-    #[DataProvider('provide_returns_the_proper_message_based_on_min_and_max_arguments_cases')]
+    /**
+     * @dataProvider provide_returns_the_proper_message_based_on_min_and_max_arguments_cases
+     */
     public function test_returns_the_proper_message_based_on_min_and_max_arguments(
         Count $rule,
         string $expectedMessage

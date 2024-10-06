@@ -10,6 +10,7 @@ use Tempest\Validation\Rules\Timezone;
 
 /**
  * @internal
+ * @small
  */
 final class TimezoneTest extends TestCase
 {

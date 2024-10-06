@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\Url;
 
 /**
  * @internal
+ * @small
  */
 final class UrlTest extends TestCase
 {

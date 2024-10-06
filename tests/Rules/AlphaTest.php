@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\Alpha;
 
 /**
  * @internal
+ * @small
  */
 final class AlphaTest extends TestCase
 {

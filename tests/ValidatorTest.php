@@ -13,6 +13,7 @@ use Tempest\Validation\Validator;
 
 /**
  * @internal
+ * @small
  */
 final class ValidatorTest extends TestCase
 {

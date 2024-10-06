@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\Ulid;
 
 /**
  * @internal
+ * @small
  */
 final class UlidTest extends TestCase
 {

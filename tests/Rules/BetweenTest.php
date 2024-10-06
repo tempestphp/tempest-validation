@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\Between;
 
 /**
  * @internal
+ * @small
  */
 final class BetweenTest extends TestCase
 {

@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\MACAddress;
 
 /**
  * @internal
+ * @small
  */
 final class MACAddressTest extends TestCase
 {

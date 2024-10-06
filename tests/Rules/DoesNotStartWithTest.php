@@ -4,16 +4,20 @@ declare(strict_types=1);
 
 namespace Tempest\Validation\Tests\Rules;
 
-use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Tempest\Validation\Rules\DoesNotStartWith;
 
 /**
  * @internal
+ * @small
  */
 final class DoesNotStartWithTest extends TestCase
 {
-    #[DataProvider('provide_rule_cases')]
+    /**
+     *
+     * @dataProvider provide_rule_cases
+     *
+     */
     public function test_rule(string $needle, string $stringToTest, bool $expected): void
     {
         $rule = new DoesNotStartWith($needle);

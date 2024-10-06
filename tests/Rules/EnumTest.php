@@ -12,6 +12,7 @@ use UnexpectedValueException;
 
 /**
  * @internal
+ * @small
  */
 final class EnumTest extends TestCase
 {

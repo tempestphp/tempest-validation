@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\IP;
 
 /**
  * @internal
+ * @small
  */
 final class IPTest extends TestCase
 {

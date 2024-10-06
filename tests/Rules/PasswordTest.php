@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\Password;
 
 /**
  * @internal
+ * @small
  */
 final class PasswordTest extends TestCase
 {
