@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\NotEmpty;
 
 /**
  * @internal
+ * @small
  */
 final class NotEmptyTest extends TestCase
 {

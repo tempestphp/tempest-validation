@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\IPv6;
 
 /**
  * @internal
+ * @small
  */
 final class IPv6Test extends TestCase
 {

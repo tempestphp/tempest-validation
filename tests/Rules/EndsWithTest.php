@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\EndsWith;
 
 /**
  * @internal
+ * @small
  */
 final class EndsWithTest extends TestCase
 {

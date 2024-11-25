@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\Uppercase;
 
 /**
  * @internal
+ * @small
  */
 final class UppercaseTest extends TestCase
 {

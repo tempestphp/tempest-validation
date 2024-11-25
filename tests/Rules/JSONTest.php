@@ -10,6 +10,7 @@ use ValueError;
 
 /**
  * @internal
+ * @small
  */
 final class JSONTest extends TestCase
 {

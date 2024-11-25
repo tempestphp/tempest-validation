@@ -12,8 +12,8 @@ final readonly class In implements Rule
 {
     public function __construct(
         /** @var array<string|int> */
-        private array $values,
-        private bool $not = false,
+        protected array $values,
+        protected bool $not = false,
     ) {
     }
 

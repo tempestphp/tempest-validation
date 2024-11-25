@@ -11,6 +11,7 @@ use Tempest\Validation\Rules\BeforeDate;
 
 /**
  * @internal
+ * @small
  */
 final class BeforeDateTest extends TestCase
 {

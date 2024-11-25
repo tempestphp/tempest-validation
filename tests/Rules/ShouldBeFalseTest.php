@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\ShouldBeFalse;
 
 /**
  * @internal
+ * @small
  */
 final class ShouldBeFalseTest extends TestCase
 {

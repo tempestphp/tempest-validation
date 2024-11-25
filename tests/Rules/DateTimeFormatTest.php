@@ -9,6 +9,7 @@ use Tempest\Validation\Rules\DateTimeFormat;
 
 /**
  * @internal
+ * @small
  */
 final class DateTimeFormatTest extends TestCase
 {

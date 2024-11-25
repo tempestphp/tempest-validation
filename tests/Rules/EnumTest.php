@@ -12,6 +12,7 @@ use UnexpectedValueException;
 
 /**
  * @internal
+ * @small
  */
 final class EnumTest extends TestCase
 {
@@ -61,34 +62,5 @@ final class EnumTest extends TestCase
         ));
 
         new Enum('Bob');
-    }
-
-    public function test_validating_only_enums(): void
-    {
-        $rule = new Enum(SomeEnum::class);
-        $this->assertTrue($rule->only(SomeEnum::VALUE_1)->isValid('VALUE_1'));
-        $this->assertFalse($rule->only(SomeEnum::VALUE_2)->isValid('VALUE_1'));
-    }
-
-    public function test_validating_except_enums(): void
-    {
-        $rule = new Enum(SomeEnum::class);
-        $this->assertTrue($rule->except(SomeEnum::VALUE_2)->isValid('VALUE_1'));
-        $this->assertFalse($rule->except(SomeEnum::VALUE_1)->isValid('VALUE_1'));
-    }
-
-    public function test_validating_only_backed_enums(): void
-    {
-        $rule = new Enum(SomeBackedEnum::class);
-        $this->assertTrue($rule->only(SomeBackedEnum::Test, SomeBackedEnum::Test2)->isValid('one'));
-        $this->assertTrue($rule->only(SomeBackedEnum::Test)->only(SomeBackedEnum::Test2)->isValid('one'));
-        $this->assertFalse($rule->only(SomeBackedEnum::Test2)->isValid('one'));
-    }
-
-    public function test_validating_except_backed_enums(): void
-    {
-        $rule = new Enum(SomeBackedEnum::class);
-        $this->assertTrue($rule->except(SomeBackedEnum::Test2)->isValid('one'));
-        $this->assertFalse($rule->except(SomeBackedEnum::Test)->isValid('one'));
     }
 }

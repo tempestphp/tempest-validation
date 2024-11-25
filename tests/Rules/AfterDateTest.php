@@ -11,6 +11,7 @@ use Tempest\Validation\Rules\AfterDate;
 
 /**
  * @internal
+ * @small
  */
 final class AfterDateTest extends TestCase
 {
