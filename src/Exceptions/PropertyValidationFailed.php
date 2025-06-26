@@ -10,7 +10,7 @@ use Tempest\Validation\Rule;
 
 use function Tempest\Support\arr;
 
-final class PropertyValidationException extends Exception
+final class PropertyValidationFailed extends Exception
 {
     /**
      * @param Rule[][] $failingRules

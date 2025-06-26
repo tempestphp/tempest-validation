@@ -9,7 +9,7 @@ use Tempest\Validation\Rule;
 
 use function Tempest\Support\arr;
 
-final class ValidationException extends Exception
+final class ValidationFailed extends Exception
 {
     public function __construct(
         public readonly object|string $subject,
