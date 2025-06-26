@@ -7,7 +7,7 @@ namespace Tempest\Validation\Exceptions;
 use Exception;
 use Tempest\Validation\Rule;
 
-final class InvalidValueException extends Exception
+final class ValueWasInvalid extends Exception
 {
     public function __construct(
         public readonly mixed $value,
